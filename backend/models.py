@@ -91,3 +91,5 @@ class Event(Base):
 
     def __repr__(self) -> str:
         return f"<Event {self.title} ({self.status.value})>"
+
+
