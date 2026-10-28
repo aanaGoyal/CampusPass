@@ -1,0 +1,14 @@
+// SAMPLE DATA ONLY. Used when VITE_API_URL is not set. Shown with a visible "sample data" notice.
+const d = (days, h, m = 0) => { const t = new Date(); t.setDate(t.getDate() + days); t.setHours(h, m, 0, 0); return t.toISOString(); };
+export const MOCK = [
+  { id: '1', title: 'Open Mic: Words & Wires', category: 'Music', venue: 'Amphitheatre Steps', startsAt: d(2, 18, 30), capacity: 120, seatsLeft: 34, organiser: 'Music Society', description: 'An evening of acoustic sets and electronic experiments. Sign up to perform or just come to listen.' },
+  { id: '2', title: 'Build Night: Ship a Side Project', category: 'Technology', venue: 'Block C, Lab 4', startsAt: d(3, 17), capacity: 60, seatsLeft: 0, organiser: 'Developers Guild', description: 'Four hours, one idea, one deployed demo. Mentors on hand for backend, frontend and design questions.' },
+  { id: '3', title: 'Inter-Hostel Football Finals', category: 'Sports', venue: 'North Ground', startsAt: d(5, 16), capacity: 300, seatsLeft: 212, organiser: 'Sports Council', description: 'The knockout final of the season. Bring a flag, bring your voice.' },
+  { id: '4', title: 'Risograph Poster Workshop', category: 'Workshop', venue: 'Design Studio 2', startsAt: d(6, 11), capacity: 24, seatsLeft: 3, organiser: 'Design Collective', description: 'Print a two-colour poster by hand. Materials provided; bring a sketch or a slogan.' },
+  { id: '5', title: 'Monsoon Theatre: A Short Season', category: 'Culture', venue: 'Auditorium', startsAt: d(8, 19), capacity: 450, seatsLeft: 388, organiser: 'Dramatics Club', description: 'Three original one-act plays written and staged by students.' },
+  { id: '6', title: 'Autumn Fest Opening Night', category: 'Festival', venue: 'Main Quad', startsAt: d(10, 17, 30), capacity: 1500, seatsLeft: 1104, organiser: 'Student Union', description: 'Lights, stalls, a parade of clubs and a headline set to open the festival week.' },
+  { id: '7', title: 'Intro to Machine Learning, Hands On', category: 'Workshop', venue: 'Seminar Hall B', startsAt: d(12, 10), capacity: 80, seatsLeft: 41, organiser: 'AI Club', description: 'Train and evaluate your first model in a single morning. Laptops required.' },
+  { id: '8', title: 'Hackathon: 24 Hours for Campus', category: 'Technology', venue: 'Innovation Centre', startsAt: d(15, 9), capacity: 150, seatsLeft: 57, organiser: 'Developers Guild', description: 'Solve a real campus problem in teams of up to four.' },
+  { id: '9', title: 'Classical Evening: Sitar & Tabla', category: 'Music', venue: 'Music Room', startsAt: d(17, 18), capacity: 90, seatsLeft: 12, organiser: 'Music Society', description: 'A guest recital followed by a conversation with the artists.' },
+  { id: '10', title: 'Poetry Slam: Unfiltered', category: 'Culture', venue: 'Library Lawn', startsAt: d(19, 17), capacity: 100, seatsLeft: 66, organiser: 'Literary Society', description: 'Three-minute poems, one panel of student judges, no microphone stands.' },
+];
